@@ -5,10 +5,10 @@ function nombres() {
     var resultado4=document.getElementById("correo3").value;
     var resultado5=document.getElementById("correo4").value;
     var resultado6=document.getElementById("correo5").value;
-    console.log(resultado1+" "+ resultado2+" "+ resultado3+" "+ resultado4+" "+ resultado5+" "+ resultado6);
+    console.log(resultado1+" "+ resultado2+" "+ resultado3+" "+ resultado4+" "+ resultado5+" "+resultado6);
 
     if(resultado1==""){
-        alert("Debes digitar el usuario")
+        alert("Debes digitar tu usuario")
         document.getElementById("correo").focus();
 }
 else{
@@ -18,24 +18,23 @@ else{
 }
 else{
     if(resultado3==""){
-        alert("Debes digitar tu correo electronico")
+        alert("Debes digitar tu telefono")
         document.getElementById("correo2").focus();
 }
-
 else{
     if(resultado4==""){
-        alert("Debes digitar tu nombre")
+        alert("Debes digitar tu correo electronico")
         document.getElementById("correo4").focus();
 }
 else{
     if(resultado5==""){
-        alert("Debes repetir tu contraseña")
+        alert("Debes digitar nuevamente tu contraseña")
         document.getElementById("correo5").focus();
 }
 else{
     if(resultado6==""){
         alert("Debes digitar tu telefono")
-        document.getElementById("correo4").focus();
+        document.getElementById("correo3").focus();
 }
 else{
     console.log(resultado1+" "+ resultado2+" "+ resultado3+" "+ resultado4+" "+resultado5+" "+resultado6);
@@ -45,7 +44,7 @@ else{
     document.getElementById("correo4").focus();
     document.getElementById("correo5").focus();
 }
-}   
+}
 }
 }
 }
